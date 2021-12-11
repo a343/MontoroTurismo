@@ -1,0 +1,246 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="0.5"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/capa_icono_pulsada_style"
+            android:gravity="center"
+            android:onClick="GoToInfoTurist"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/button04"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@drawable/capa_pulsada_style"
+                android:contentDescription="Que visitar"
+                android:onClick="GoToInfoTurist"
+                android:src="@drawable/icono_visitas" />
+
+            <TextView
+                android:id="@+id/textLugares"
+                style="@style/CustomTextPrincipalArriba"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Qué visitar"
+                android:textSize="@dimen/text_size_big" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF" >
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/capa_icono_pulsada_style"
+            android:gravity="center"
+            android:onClick="GoToExcursions"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@drawable/capa_pulsada_style"
+                android:contentDescription="Rutas"
+                android:onClick="GoToExcursions"
+                android:src="@drawable/icono_rutas_marron" />
+
+            <TextView
+                android:id="@+id/textExcursiones"
+                style="@style/CustomTextPrincipalArriba"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Excursiones"
+                android:textSize="@dimen/text_size_big" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:weightSum="3" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="left|bottom"
+            android:layout_weight="1"
+            android:background="@drawable/capa_pulsada_style"
+            android:onClick="GoToInfoPubs"
+            android:orientation="horizontal"
+            android:weightSum="3.5" >
+
+            <ImageView
+                android:id="@+id/button06"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/capa_pulsada_style"
+                android:contentDescription="Tomar una copa"
+                android:onClick="GoToInfoPubs"
+                android:src="@drawable/icono_beber_amarillo" />
+
+            <TextView
+                android:id="@+id/textPub"
+                style="@style/CustomTextPrincipalAbajo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:text="Tomar una copa"
+                android:textSize="@dimen/text_size_small" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#FFFFFF" >
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="left|bottom"
+            android:layout_weight="1"
+            android:background="@drawable/capa_pulsada_style"
+            android:onClick="GoToInfoBares"
+            android:orientation="horizontal"
+            android:weightSum="3.5" >
+
+            <ImageView
+                android:id="@+id/Button01"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/capa_pulsada_style"
+                android:contentDescription="Comer"
+                android:onClick="GoToInfoBares"
+                android:src="@drawable/icono_comer_rojo" />
+
+            <TextView
+                android:id="@+id/textComer"
+                style="@style/CustomTextPrincipalAbajo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:text="Comer/tapear"
+                android:textSize="@dimen/text_size_small" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#FFFFFF" >
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="left|bottom"
+            android:layout_weight="1"
+            android:background="@drawable/capa_pulsada_style"
+            android:onClick="GoToInfoAlojamiento"
+            android:orientation="horizontal"
+            android:weightSum="3.5" >
+
+            <ImageView
+                android:id="@+id/button02"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/capa_pulsada_style"
+                android:contentDescription="Alojamiento"
+                android:onClick="GoToInfoAlojamiento"
+                android:src="@drawable/icono_hotel" />
+
+            <TextView
+                android:id="@+id/textAlojamiento"
+                style="@style/CustomTextPrincipalAbajo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:onClick="GoToInfoAlojamiento"
+                android:text="Alojamiento"
+                android:textSize="@dimen/text_size_small" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/admobBanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        android:gravity="center"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D3D3D3"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Aplicación dedicada a facilitar y"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:text="promocionar el turismo en Montoro"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#000" />
+    </LinearLayout>
+
+</LinearLayout>

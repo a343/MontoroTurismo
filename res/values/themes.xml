@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="Theme.Styled" parent="Theme.Sherlock.Light">
+        <item name="android:windowBackground">@drawable/pattern</item>
+    </style>
+
+    <style name="CustomTextPrincipalAbajo">
+        <item name="android:shadowColor">#000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowRadius">1.5</item>
+        <item name="android:textColor">@drawable/text_color</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <style name="CustomTextPrincipalArriba" parent="@style/CustomTextPrincipalAbajo">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity"></item>
+    </style>
+
+    <style name="DialogWindowTitle" parent="@android:style/Theme.Dialog">
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+</resources>
